@@ -1,17 +1,93 @@
 <!DOCTYPE html>
-
 <html lang="tr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>KUTUKOLİK - Kutu ve Ambalaj Çözümleri</title>
-<meta content="JJMeI591StxwQi_ctFkUjDvervJ6VTb5OgUFb786O9E" name="google-site-verification"/>
-<meta content="Kutukolik ile pizza, ayakkabı ve lahmacun kutularında kaliteli ve şık çözümler. Sipariş verin, fark yaratın." name="description"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KUTUKOLİK - Kutu ve Ambalaj Çözümleri</title>
+  <meta name="google-site-verification" content="JJMeI591StxwQi_ctFkUjDvervJ6VTb5OgUFb786O9E"/>
+  <meta name="description" content="Kutukolik ile pizza, ayakkabı ve lahmacun kutularında kaliteli ve şık çözümler. Sipariş verin, fark yaratın."/>
+  <meta name="keywords" content="pizza kutusu üreticisi, ayakkabı kutusu toptan, lahmacun kutusu, kraft kutu, özel baskılı kutu, kutu ambalaj firmaları, gıda ambalajı, marka kutusu, e-ticaret kutusu, kraft pizza kutusu, butik kutusu, ayakkabı kutusu baskılı, kutu ve ambalaj çözümleri, kutu tasarımı, ürün ambalajı"/>
 
-<meta content="pizza kutusu üreticisi, ayakkabı kutusu toptan, lahmacun kutusu, kraft kutu, özel baskılı kutu, kutu ambalaj firmaları, gıda ambalajı, marka kutusu, e-ticaret kutusu, kraft pizza kutusu, butik kutusu, ayakkabı kutusu baskılı, kutu ve ambalaj çözümleri, kutu tasarımı, ürün ambalajı" name="keywords"/>
-<title>Pizza, Ayakkabı ve Lahmacun Kutusu Üreticisi | Kutukolik</title>
-<meta content="Kutukolik ile baskılı pizza kutusu, ayakkabı kutusu, lahmacun kutusu ve kraft ambalajlarda uygun fiyatlı çözümler. Kaliteli, hızlı üretim. Sipariş için tıklayın." name="description"/>
-</head></html>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+    .hero {
+      background: linear-gradient(to right, #25d366, #128c7e);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .boxes-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 250px;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    form input, form select, form textarea, form button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #25d366;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background-color: #1ebe5d;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    a {
+      color: #25d366;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -60,7 +136,7 @@
       </select>
       <input type="number" id="quantity" name="quantity" placeholder="Adet" />
       <textarea id="notes" name="notes" placeholder="Ek açıklamalar..."></textarea>
-      <button type="button" onclick="sendToWhatsApp()">Gönder</button>
+      <button type="button" onclick="sendToWhatsApp()">WhatsApp'tan Gönder</button>
     </form>
   </div>
 </div>
@@ -71,7 +147,7 @@
 </div>
 
 <footer>
-  <p>© 2025 KUTUKOLİK - Tüm Hakları Saklıdır | <a href="https://seoder-robin.github.io/KUTUKOLIK.COM/" style="color:#fff;">kutukolik.com</a></p>
+  <p>© 2025 KUTUKOLİK - Tüm Hakları Saklıdır | <a href="https://seoder-robin.github.io/KUTUKOLIK.COM/">kutukolik.com</a></p>
 </footer>
 
 <script>
@@ -83,11 +159,10 @@
     var quantity = document.getElementById('quantity').value;
     var notes = document.getElementById('notes').value;
 
-    var whatsappMessage = `Ad: ${name}, Firma: ${company}, Telefon: ${phone}, Ürün: ${product}, Adet: ${quantity}, Ek Açıklama: ${notes}`;
-    
+    var whatsappMessage = `📦 Yeni Sipariş Talebi!%0A👤 Ad: ${name}%0A🏢 Firma: ${company}%0A📞 Telefon: ${phone}%0A📦 Ürün: ${product}%0A🔢 Adet: ${quantity}%0A📝 Not: ${notes}`;
+
     var phoneNumber = '5356220897';
-    var url = `https://wa.me/90${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-    
+    var url = `https://wa.me/90${phoneNumber}?text=${whatsappMessage}`;
     window.open(url, '_blank');
   }
 </script>
