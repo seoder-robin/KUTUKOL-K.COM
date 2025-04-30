@@ -19,7 +19,7 @@
       text-align: center;
     }
     header img {
-      width: 70%; /* Logo boyutunu %80 yapıyoruz */
+      width: 80%; /* Logo boyutunu %80 yapıyoruz */
       height: auto;
       margin-bottom: 20px;
     }
@@ -190,8 +190,8 @@
 
     var whatsappMessage = `Ad: ${name}, Firma: ${company}, Telefon: ${phone}, Ürün: ${product}, Adet: ${quantity}, Ek Açıklama: ${notes}`;
     
-    var phoneNumber = '+90 535 622 08 97'; // Telefon numaranı buraya yazdım
-    var url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    var phoneNumber = '5356220897'; // Telefon numaranı buraya yazdım
+    var url = `https://wa.me/90${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     
     window.open(url, '_blank');
   }
