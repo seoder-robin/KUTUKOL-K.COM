@@ -1,1 +1,96 @@
+<!DOCTYPE html>
 
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KUTUKOLİK - Kutu ve Ambalaj Çözümleri</title>
+<meta content="JJMeI591StxwQi_ctFkUjDvervJ6VTb5OgUFb786O9E" name="google-site-verification"/>
+<meta content="Kutukolik ile pizza, ayakkabı ve lahmacun kutularında kaliteli ve şık çözümler. Sipariş verin, fark yaratın." name="description"/>
+
+<meta content="pizza kutusu üreticisi, ayakkabı kutusu toptan, lahmacun kutusu, kraft kutu, özel baskılı kutu, kutu ambalaj firmaları, gıda ambalajı, marka kutusu, e-ticaret kutusu, kraft pizza kutusu, butik kutusu, ayakkabı kutusu baskılı, kutu ve ambalaj çözümleri, kutu tasarımı, ürün ambalajı" name="keywords"/>
+<title>Pizza, Ayakkabı ve Lahmacun Kutusu Üreticisi | Kutukolik</title>
+<meta content="Kutukolik ile baskılı pizza kutusu, ayakkabı kutusu, lahmacun kutusu ve kraft ambalajlarda uygun fiyatlı çözümler. Kaliteli, hızlı üretim. Sipariş için tıklayın." name="description"/>
+</head></html>
+</head>
+<body>
+
+<header>
+  <img src="kutukolik-logo.png" alt="Kutukolik Logo" />
+  <h1>KUTUKOLİK</h1>
+  <p>Kutu ve Ambalaj Çözümleri</p>
+</header>
+
+<div class="hero">
+  <h1>Paketleme Bizim İşimiz!</h1>
+  <p>Pizza, ayakkabı, lahmacun kutuları ve daha fazlası</p>
+</div>
+
+<div class="section">
+  <h2>Ürünlerimiz</h2>
+  <div class="boxes-container">
+    <div class="box">
+      <h3>Pizza Kutusu</h3>
+      <p>Üstün kaliteli, dayanıklı pizza kutuları</p>
+    </div>
+    <div class="box">
+      <h3>Ayakkabı Kutusu</h3>
+      <p>Modaya uygun şık ayakkabı kutuları</p>
+    </div>
+    <div class="box">
+      <h3>Lahmacun Kutusu</h3>
+      <p>Lezzetli lahmacunlar için özel kutular</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Sipariş / Teklif Al</h2>
+  <div class="form-container">
+    <form id="orderForm">
+      <input type="text" id="name" name="name" placeholder="Ad Soyad" required />
+      <input type="text" id="company" name="company" placeholder="Firma Adı" />
+      <input type="tel" id="phone" name="phone" placeholder="Telefon Numarası" />
+      <select id="product" name="product">
+        <option value="">Ürün Seçin</option>
+        <option value="pizza">Pizza Kutusu</option>
+        <option value="ayakkabi">Ayakkabı Kutusu</option>
+        <option value="lahmacun">Lahmacun Kutusu</option>
+        <option value="ozel">Özel Tasarım</option>
+      </select>
+      <input type="number" id="quantity" name="quantity" placeholder="Adet" />
+      <textarea id="notes" name="notes" placeholder="Ek açıklamalar..."></textarea>
+      <button type="button" onclick="sendToWhatsApp()">Gönder</button>
+    </form>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Kutukolik ile Profesyonel Kutu Ambalaj Çözümleri</h2>
+  <p>Pizza kutusu, ayakkabı kutusu, lahmacun ve pide kutusu üretiminde uzmanlaşan Kutukolik; kraft, karton ve özel tasarım ambalajlarla hizmetinizde. Baskılı kutu çözümleri, marka görünürlüğünüzü artırmak ve ürünlerinizi güvenle sunmak için şimdi bizimle iletişime geçin.</p>
+</div>
+
+<footer>
+  <p>© 2025 KUTUKOLİK - Tüm Hakları Saklıdır | <a href="https://seoder-robin.github.io/KUTUKOLIK.COM/" style="color:#fff;">kutukolik.com</a></p>
+</footer>
+
+<script>
+  function sendToWhatsApp() {
+    var name = document.getElementById('name').value;
+    var company = document.getElementById('company').value;
+    var phone = document.getElementById('phone').value;
+    var product = document.getElementById('product').value;
+    var quantity = document.getElementById('quantity').value;
+    var notes = document.getElementById('notes').value;
+
+    var whatsappMessage = `Ad: ${name}, Firma: ${company}, Telefon: ${phone}, Ürün: ${product}, Adet: ${quantity}, Ek Açıklama: ${notes}`;
+    
+    var phoneNumber = '5356220897';
+    var url = `https://wa.me/90${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    window.open(url, '_blank');
+  }
+</script>
+
+</body>
+</html>
