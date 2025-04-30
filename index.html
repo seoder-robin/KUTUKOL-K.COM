@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KUTUKOLİK - Kutu ve Ambalaj</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .hero {
+      background-color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .section {
+      padding: 30px;
+      background: white;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 12px;
+      margin: 6px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #222;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #444;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>KUTUKOLİK</h1>
+  <p>Kutu ve Ambalaj Çözümleri</p>
+</header>
+
+<div class="hero">
+  <h1>Paketleme Bizim İşimiz!</h1>
+  <p>Pizza, ayakkabı, lahmacun kutuları ve daha fazlası</p>
+</div>
+
+<div class="section">
+  <h2>Ürünlerimiz</h2>
+  <ul>
+    <li>Pizza Kutuları</li>
+    <li>Ayakkabı Kutuları</li>
+    <li>Lahmacun/Pide Kutuları</li>
+    <li>Özel Tasarım Kutular</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Sipariş / Teklif Al</h2>
+  <div class="form-container">
+    <form action="mailto:seninmailin@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ad Soyad" required />
+      <input type="text" name="company" placeholder="Firma Adı" />
+      <input type="tel" name="phone" placeholder="Telefon Numarası" />
+      <select name="product">
+        <option value="">Ürün Seçin</option>
+        <option value="pizza">Pizza Kutusu</option>
+        <option value="ayakkabi">Ayakkabı Kutusu</option>
+        <option value="lahmacun">Lahmacun Kutusu</option>
+        <option value="ozel">Özel Tasarım</option>
+      </select>
+      <input type="number" name="adet" placeholder="Adet" />
+      <textarea name="notes" placeholder="Ek açıklamalar..."></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 KUTUKOLİK - Tüm Hakları Saklıdır</p>
+</footer>
+
+</body>
+</html>
